@@ -1,11 +1,11 @@
 project "GLFW"
 	kind "StaticLib"
 	language "C"
-	staticruntime "off"
+	staticruntime "on"
 	warnings "off"
 
-	targetdir ("bin/" .. outputdir .. "/%{prj.name}")
-	objdir ("bin-int/" .. outputdir .. "/%{prj.name}")
+	targetdir ("bin/" .. outputDir .. "/%{prj.name}")
+	objdir ("bin-int/" .. outputDir .. "/%{prj.name}")
 
 	files
 	{
